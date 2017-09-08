@@ -27,18 +27,17 @@
     <div class=headbeer">
         <h2>BEER SEARCHING</h2>
     </div>
-    <div class="panel-body">
-                <div class="row  form-group">
-		
-                    <div class="col-sm-4">
-                        <input class="form-control pull-left" id="beerName" placeholder="Beer Name" />
-                    </div>
-                    <div class="col-sm-1 ">
-                        <button class="btn btn-info pull-left form-control" onclick="SearchBeer(document.getElementById('beerName').value)">Search</button>
-                    </div>
-																	   
+    <form>
+     	<div class="input-group">
+           	<input type="text" id="beer-name" class="form-control" placeholder="Name Beers" required>
+                <div class="input-group-btn">
+                   <button onclick="toSearch(document.getElementById('beer-name').value)" type="button" class="btn btn-danger">Search</button>
                 </div>
-            </div>
-   <p id="result"></p>
+                </div>
+    </form>
+    
+        <br>
+        <p id="result"></p>
+      </div>
 </body>
 </html>

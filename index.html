@@ -28,23 +28,16 @@
     <div class=headbeer">
         <h2>BEER SEARCHING</h2>
     </div>
-    <div class="container" style="margin-top: 20px; margin-bottom: 20px">
-        <div class="container">
-            <div class="row search-box">
-                <div class="col">
-                    <div class="form-group">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Beer name" id="inputText">
-                            <span class="input-group-btn">
-                        <button onclick="toSearch(document.getElementById('beer-name').value)" type="button" class="btn btn-danger">Search</button>
-                    </span>
-                        </div>
+    <div class="panel-body">
+                <div class="row  form-group">
+                    <div class="col-sm-4">
+                        <input class="form-control pull-left" id="beerName" placeholder="Example Buzz" />
+                    </div>
+                    <div class="col-sm-1 ">
+                        <button class="btn btn-info pull-left form-control" onclick="SearchBeer(document.getElementById('beerName').value)">Search</button>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="card-deck" style="margin-top: 20px" id="show-result"></div>
-    </div>
 
     <!-- Modal -->
     <div class="modal fade" id="showDetail" tabindex="-1" role="dialog">

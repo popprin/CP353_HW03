@@ -9,35 +9,41 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src='build/main.bundle.js'></script>
-    <titleHW03</title>
+    <title>HOMEWORK 3</title>
     <style>
-		body {
-			text-align: center;
-            		background-color: #E8E288;
-		}
-		.headbeer{
-			text-align: center;
-			color: #fff;
-		}
-	    	
-     </style>
+            body {
+                font: 400 15px Lato, sans-serif;
+                line-height: 1.8;
+                color: #818181;
+                text-align: center;
+            }
+           .jumbotron {
+                background-color: #f4511e;
+                color: #fff;
+                padding: 80px 25px;
+                font-family: Montserrat, sans-serif;
+                text-align: center;
+            }
+    </style>
+    
 </head>
 
 <body>
-    <div class=headbeer">
+    <div class="jumbotron">
         <h2>BEER SEARCHING</h2>
-    </div>
-    <form>
-     	<div class="input-group">
-           	<input type="text" id="beer-name" class="form-control" placeholder="Name Beers" required>
-                <div class="input-group-btn">
-                   <button onclick="toSearch(document.getElementById('beer-name').value)" type="button" class="btn btn-danger">Search</button>
-                </div>
-                </div>
-    </form>
+      </div>
+      <form>
+            <div class="input-group">
+              <input type="text" id="beer-name" class="form-control" placeholder="Name Beers" required>
+              <div class="input-group-btn">
+                <button onclick="toSearch(document.getElementById('beer-name').value)" type="button" class="btn btn-danger">Search</button>
+              </div>
+            </div>
+          </form>
     
         <br>
         <p id="result"></p>
       </div>
 </body>
+
 </html>

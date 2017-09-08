@@ -56,7 +56,7 @@ const showResult = (beers) => {
     for (let beer of beers) {
         cards += card(beer)
     }
-    document.getElementById(`show-result`).innerHTML = cards
+    document.getElementById(`show-result`).innerHTML = cards ? cards : 'No result'
 }
 
 const search = () => {
@@ -78,6 +78,9 @@ const search = () => {
             } else {
                 getByParam(`brewed_after=${param}`).then(beers => showResult(beers))
             }
+        } else {
+            showResult([])
+            return
         }
     } else {
         let param = ''
